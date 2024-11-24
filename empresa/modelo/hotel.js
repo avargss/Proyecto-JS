@@ -12,7 +12,7 @@ class Hotel {
 
     // GET 
 
-    static async loadData() {
+    static async doGet() {
         const response = await fetch("../../assets/hoteles.json");
         if (!response.ok) throw new Error("DATOS NO CARGADOS")
         const datos = await response.json();
@@ -35,16 +35,26 @@ class Hotel {
 
     // GET ID
 
+    static async filterData() {
 
+    }
 
     // PUT
 
+    static async doPut() {
 
+    }
 
     // POST
 
+    static async doPost() {
 
+    }
 
     // DELETE
+
+    static async doDelete() {
+
+    }
 
 }
