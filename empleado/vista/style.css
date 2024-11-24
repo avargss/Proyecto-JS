@@ -59,42 +59,14 @@ th {
     font-size: 1rem;
 }
 
-.btn-warning {
-    background-color: #ffc107 !important;
-    border: none !important;
-    color: white !important;
-}
-
-.btn-warning:hover {
-    background-color: #e0a800 !important;
-}
-
-.btn-danger {
-    background-color: #dc3545 !important;
-    border: none !important;
-    color: white !important;
-}
-
-.btn-danger:hover {
-    background-color: #b02a37 !important;
-}
-
 .btn-custom-warning {
     background-color: #ffc107 !important;
     border: none;
     color: white;
 }
 
-.btn-custom-warning:hover {
-    background-color: #e0a800 !important;
-}
-
 .btn-custom-danger {
     background-color: #dc3545 !important;
     border: none;
     color: white;
-}
-
-.btn-custom-danger:hover {
-    background-color: #b02a37 !important;
 }

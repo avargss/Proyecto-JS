@@ -11,7 +11,7 @@ class Empleado {
     // GET 
 
     static async loadData() {
-        const response = await fetch(`../assets/empleados.json`);
+        const response = await fetch("../../assets/empleados.json");
         if (!response.ok) throw new Error("DATOS NO CARGADOS")
         const datos = await response.json();
 
