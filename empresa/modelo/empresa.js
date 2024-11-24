@@ -17,7 +17,7 @@ class Hotel {
         if (!response.ok) throw new Error("DATOS NO CARGADOS")
         const datos = await response.json();
 
-        // Convertir cada entrada en una instancia de Empleado
+        // Convertir cada entrada en una instancia de Hotel
         return datos.map(
             (h) =>
                 new Hotel(
