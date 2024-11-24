@@ -6,10 +6,8 @@
         "provincia": "Málaga",
         "aforo": 100,
         "piscina": true,
-        "coordenadas": {
-            "latitud": 36.7213,
-            "longitud": -4.4214
-        }
+        "latitud": 36.7213,
+        "longitud": -4.4214
     },
     {
         "id": 2,
@@ -18,10 +16,8 @@
         "provincia": "Asturias",
         "aforo": 50,
         "piscina": false,
-        "coordenadas": {
-            "latitud": 43.3623,
-            "longitud": -5.8502
-        }
+        "latitud": 43.3623,
+        "longitud": -5.8502
     },
     {
         "id": 3,
@@ -30,10 +26,8 @@
         "provincia": "Valencia",
         "aforo": 200,
         "piscina": true,
-        "coordenadas": {
-            "latitud": 39.4699,
-            "longitud": -0.3763
-        }
+        "latitud": 39.4699,
+        "longitud": -0.3763
     },
     {
         "id": 4,
@@ -42,10 +36,8 @@
         "provincia": "Cáceres",
         "aforo": 30,
         "piscina": false,
-        "coordenadas": {
-            "latitud": 39.4763,
-            "longitud": -6.3727
-        }
+        "latitud": 39.4763,
+        "longitud": -6.3727
     },
     {
         "id": 5,
@@ -54,9 +46,7 @@
         "provincia": "Madrid",
         "aforo": 150,
         "piscina": true,
-        "coordenadas": {
-            "latitud": 40.4168,
-            "longitud": -3.7038
-        }
+        "latitud": 40.4168,
+        "longitud": -3.7038
     }
 ]

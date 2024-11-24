@@ -1,17 +1,19 @@
-function showEmpleadoData(empleados) {
+function showHotelData(hoteles) {
 
     let tabla = document.querySelector("table");
 
-    empleados.forEach(element => {
+    hoteles.forEach(element => {
 
         let tr = document.createElement("tr");
         tr.innerHTML = `
-        <td>${element.id_empleado}</td>
+        <td>${element.id}</td>
         <td>${element.nombre}</td>
-        <td>${element.apellidos}</td>
-        <td>${element.edad}</td>
-        <td>${element.fecha_nacimiento}</td>
-        <td>${element.id_hotel}</td>
+        <td>${element.direccion}</td>
+        <td>${element.provincia}</td>
+        <td>${element.aforo}</td>
+        <td>${element.piscina ? "Sí" : "No"}</td>
+        <td>${element.latitud}</td>
+        <td>${element.longitud}</td>
         <td class="text-center">
                 <button class="btn btn-custom-warning me-2">
                     <i class="fas fa-pencil-alt"></i> Editar
@@ -19,7 +21,6 @@ function showEmpleadoData(empleados) {
                 <button class="btn btn-custom-danger">
                     <i class="fas fa-trash-alt"></i> Eliminar
                 </button>
-
         </td>
         `;
 
@@ -28,15 +29,16 @@ function showEmpleadoData(empleados) {
     });
 }
 
-async function loadEmpleados() {
+async function loadHoteles() {
     try {
-        const empleados = await Empleado.loadData();
-        showEmpleadoData(empleados);
+        const hoteles = await Hotel.loadData();
+        showHotelData(hoteles);
 
     } catch (error) {
-        console.error("No hay empleados registrados en el sistema", error);
+        console.error("No hay hoteles registrados en el sistema", error);
 
     }
 }
 
-loadEmpleados();
+loadHoteles();
+
