@@ -10,7 +10,24 @@ class Empleado {
 
     // GET 
 
+    static async loadData() {
+        const response = await fetch(`../assets/empleados.json`);
+        if (!response.ok) throw new Error("DATOS NO CARGADOS")
+        const datos = await response.json();
 
+        // Convertir cada entrada en una instancia de Empleado
+        return datos.map(
+            (e) =>
+                new Empleado(
+                    e.id_empleado,
+                    e.nombre,
+                    e.apellidos,
+                    e.edad,
+                    e.fecha_nacimiento,
+                    e.id_hotel
+                )
+        );
+    }
 
     // GET ID
 

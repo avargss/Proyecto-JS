@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    background-color: #007bff;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+.menu a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #d4d4d4;
+}
+
+main {
+    text-align: center;
+    padding: 2rem;
+}
+
+table {
+    width: 100%;
+    border: 2px solid #dee2e6;
+}
+
+th, td {
+    border: 1px solid #dee2e6;
+    text-align: center;
+    padding: 0.75rem;
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+
+.btn {
+    font-size: 0.9rem;
+    border-radius: 5px;
+    padding: 0.3rem 0.7rem;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.btn i {
+    margin-right: 5px;
+    vertical-align: middle;
+    font-size: 1rem;
+}
+
+.btn-warning {
+    background-color: #ffc107 !important;
+    border: none !important;
+    color: white !important;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800 !important;
+}
+
+.btn-danger {
+    background-color: #dc3545 !important;
+    border: none !important;
+    color: white !important;
+}
+
+.btn-danger:hover {
+    background-color: #b02a37 !important;
+}
+
+.btn-custom-warning {
+    background-color: #ffc107 !important;
+    border: none;
+    color: white;
+}
+
+.btn-custom-warning:hover {
+    background-color: #e0a800 !important;
+}
+
+.btn-custom-danger {
+    background-color: #dc3545 !important;
+    border: none;
+    color: white;
+}
+
+.btn-custom-danger:hover {
+    background-color: #b02a37 !important;
+}

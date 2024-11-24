@@ -1,15 +1,8 @@
-function showData() {
-    let empleado = new Empleado;
+function showData(empleados) {
 
-    let data = empleado.empleadosJSON().then(empleados);
     let tabla = document.querySelector("table");
 
-    console.log(data);
-    console.log(typeof data);
-    
-    
-
-    data.forEach(element => {
+    empleados.forEach(element => {
 
         let tr = document.createElement("tr");
         tr.innerHTML = `
@@ -19,12 +12,31 @@ function showData() {
         <td>${element.edad}</td>
         <td>${element.fecha_nacimiento}</td>
         <td>${element.id_hotel}</td>
+        <td class="text-center">
+                <button class="btn btn-custom-warning me-2">
+                    <i class="fas fa-pencil-alt"></i> Editar
+                </button>
+                <button class="btn btn-custom-danger">
+                    <i class="fas fa-trash-alt"></i> Eliminar
+                </button>
+
+        </td>
         `;
-        
+
         tabla.appendChild(tr);
 
     });
-
 }
 
-showData();
+async function loadEmpleados() {
+    try {
+        const empleados = await Empleado.loadData();
+        showData(empleados);
+
+    } catch (error) {
+        console.error("nanai", error);
+
+    }
+}
+
+loadEmpleados();
