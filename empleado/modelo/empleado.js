@@ -10,7 +10,7 @@ class Empleado {
 
     // GET 
 
-    static async loadData() {
+    /* static async loadData() {
         const response = await fetch("../../assets/empleados.json");
         if (!response.ok) throw new Error("DATOS NO CARGADOS")
         const datos = await response.json();
@@ -27,7 +27,7 @@ class Empleado {
                     e.id_hotel
                 )
         );
-    }
+    } */
 
     // GET ID
 

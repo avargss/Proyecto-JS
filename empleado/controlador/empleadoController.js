@@ -1,4 +1,4 @@
-function showEmpleadoData(empleados) {
+/* function showEmpleadoData(empleados) {
 
     let tabla = document.querySelector("table");
 
@@ -39,4 +39,4 @@ async function loadEmpleados() {
     }
 }
 
-loadEmpleados();
+loadEmpleados(); */

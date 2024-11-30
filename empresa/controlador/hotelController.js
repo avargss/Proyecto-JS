@@ -1,4 +1,4 @@
-function showHotelData(hoteles) {
+/* function showHotelData(hoteles) {
 
     let tabla = document.querySelector("table");
 
@@ -59,8 +59,7 @@ async function getLastID() {
 function saveNewHotelData(newHotel) {
 
     console.log("Guardando nuevo hotel:", newHotel);
-    // Aquí puedes realizar la lógica para guardar el nuevo hotel en el archivo hoteles.json.
-    // Por ejemplo, enviar una solicitud POST a tu servidor si estás utilizando uno.
+    // Aquí irá la lógica para guardar el nuevo hotel en el archivo hoteles.json.
     console.log(typeof newHotel);
 
 }
@@ -95,4 +94,4 @@ document.getElementById("saveButton").addEventListener("click", async (event) =>
         alert("Hubo un problema al añadir el hotel.");
     }
 
-});
+}); */
